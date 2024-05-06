@@ -1,16 +1,10 @@
-.container {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
- }
- 
- img {
-   width: 500px;
- }
- 
- .text {
-   font-size: 30px;
- }
- Code language: CSS (css)
- 
+img{
+  float: left;
+}
+.order{
+  color: green;
+  display: inline;
+}
+a:focus{
+  color: green;
+}
