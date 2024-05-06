@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Header with Image Display</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000; /* Ensure header stays on top */
+    }
+    .container {
+        margin-top: 80px; /* Adjust according to header height */
+        padding: 20px;
+    }
+    .options {
+        position: fixed;
+        top: 60px; /* Adjust according to header height and spacing */
+        left: 20px; /* Adjust according to desired left spacing */
+    }
+    .option {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .option:hover {
+        background-color: #f0f0f0;
+    }
+    .image-container {
+        text-align: center;
+        margin-top: 20px; /* Add space between options and images */
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Hide checkboxes */
+    .option-checkbox {
+        display: none;
+    }
+    /* Style labels as options */
+    .option-label {
+        display: block;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    /* When checkbox is checked, display image */
+    .option-checkbox:checked + .image-container img {
+        display: block;
+    }
+    /* Hide images by default */
+    .image-container img {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Fixed Header</h1>
+</header>
+
+<div class="container">
+    <div class="options">
+        <input type="checkbox" id="image1" class="option-checkbox">
+        <label for="image1" class="option-label">Option 1</label>
+        <input type="checkbox" id="image2" class="option-checkbox">
+        <label for="image2" class="option-label">Option 2</label>
+        <input type="checkbox" id="image3" class="option-checkbox">
+        <label for="image3" class="option-label">Option 3</label>
+    </div>
+    
+    <div class="image-container">
+        <img src="../../Assests/sriyan 1.jpg" alt="">
+        <video src="../../Assests/videopractice.mp4" alt="">
+        <img src="path/to/image3.jpg" alt="">
+    </div>
+</div>
+
+</body>
+</html>

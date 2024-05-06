@@ -1,0 +1,77 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin-top: 60px; /* Adjust for the height of the fixed header */
+  }
+  
+  header {
+    background-color: #007bff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  aside.sidebar {
+    background-color: #f8f9fa;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    overflow-y: auto;
+  }
+  
+  aside.sidebar ul {
+    list-style-type: none;
+  }
+  
+  aside.sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  aside.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  main.content {
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: 60px; /* Adjust for the height of the fixed header */
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
