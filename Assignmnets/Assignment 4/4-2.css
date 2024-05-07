@@ -1,18 +1,9 @@
-.container{
-  position: relative;
-}
 .img1{
-  float: left;
-  position: absolute;
-  top: 0;
-  left: 0;
+  float:left;
 }
 .img2{
-  float: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  float:right;
 }
-.text{
-  
+body{
+  background-color: aliceblue;
 }
