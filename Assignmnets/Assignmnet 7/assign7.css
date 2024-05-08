@@ -10,4 +10,6 @@ table,th,td{
   border-collapse: collapse;
   padding: 10px 5px;
 }
-
+h2{
+  text-align:center;
+}

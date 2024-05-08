@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+  <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+   <form>
+    <!--Username-->
+    <div>
+      <label for="user">Username:</label>
+      <input type="text" 
+             id="user"
+             name="username"
+             required
+             minlength="6">
+    </div>
+
+    <!--Password-->
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" 
+             id="password"
+             name=""
+             >
+    </div>
+
+    <!--Date-->
+    <div>
+      <label for="date">Date of Birth</label>
+      <input type="date" name="date" id="date">
+    </div>
+
+    <!--Files-->
+    <div>
+      <label for="img">Profile Pic</label>
+      <input type="file" 
+             name="img" 
+             id="img">
+    </div>
+
+    <!--Checkbox-->
+    <div>
+      <label for="">Languages Known</label>
+    <!--Telugu-->
+      <div>
+        <input type="checkbox" name="tel" id="tel">
+        <label for="tel">Telugu</label>
+      </div>
+      <!--English-->
+      <div>
+        <input type="checkbox" name="eng" id="eng">
+        <label for="eng">English</label>
+      </div>
+      <!--Hindi-->
+      <div>
+        <input type="checkbox" name="hin" id="hin">
+        <label for="hin">Hindi</label>
+      </div>
+    </div>
+
+    <!--Radio-->
+    <div>
+      <label for="">Gender</label>
+      <!--male-->
+      <div>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+      </div>
+      <!--female-->
+      <div>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+      </div>
+      <!--others-->
+      <div>
+        <input type="radio" name="gender" id="others">
+        <label for="Others">Others</label>
+      </div>
+    </div>
+    
+    <!--Select option-->
+    <div>
+    <label for="state">Select a State</label>
+    <select name="state" id="state">
+      <option value="" disable selected>--select a state--</option>
+      <option value="telangana">Telangana</option>
+      <option value="tamilnadu">Tamilnadu</option>
+      <option value="andhra pradesh">Andhra Pradesh</option>
+    </select>
+    </div>
+    
+ <!--text area-->
+    <div>
+      <label for="fb">Write Feedback</label>
+      <textarea name="feedback" id="fb" cols="30" rows="5"></textarea>
+    </div>
+
+    <!--Button-->
+    <button type="submit">sign-up</button>
+    <button type="reset">reset</button>
+
+   </form>
+</body>
+</html>
